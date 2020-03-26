@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <p> If you want to registrate follow the for bellow</p>
+        <form action="/thx" method="post">
+            <label for="first">First name:</label>
+            <input type="text" id="first" name="first">
+            <label for="second"> Second name:</label>
+            <input type="text" id="second" name="second">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        Please fill the for below:
+            Username needs to fulfill requirements:
+            - must have upper case letter,
+            - must have lower case letter,
+            - must have number at the end.
+
+        <form action="/pass_var" method="post">
+            <label for="username"> USername:</label>
+            <input type="text" id="username" name="username">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock %}

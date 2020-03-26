@@ -1,0 +1,19 @@
+{% extends 'basic_view.html' %}
+
+{% block content %}
+    <h1> Welcome to basic view of template</h1>
+        <p>{{ my_sentence }}</p>
+        <p>{{ my_dict }}</p>
+        <p>{{ my_dict['some_name']}}</p>
+        <ol>
+            {% for letter in my_sentence %}
+            <li> {{ letter }}</li>
+            {% endfor %}
+        </ol>
+        {% if 'o' in my_sentence %}
+            <p>there is o in my sentence</p>
+        {% else %}
+            <p>No o in senctence</p>
+        {% endif %}
+<p> this is some site with basic understanding of extending html base</p>
+{% endblock %}
